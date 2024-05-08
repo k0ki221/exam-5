@@ -1,0 +1,4 @@
+SELECT uczen.nazwisko, uczen.PESEL FROM uczen;
+SELECT uczen.imie, uczen.nazwisko FROM uczen WHERE uczen.id = 1;
+SELECT MAX(ocena.ocena) AS "Najwyzsza_Ocena" FROM uczen INNER JOIN ocena ON ocena.uczen_id = uczen.id WHERE uczen.id = 1;
+SELECT COUNT(ocena.ocena) AS "Ilosc_Ocen" FROM uczen INNER JOIN ocena ON ocena.uczen_id = uczen.id WHERE uczen.id = 1;
